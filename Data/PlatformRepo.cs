@@ -21,7 +21,7 @@ public class PlatformRepo : IPlatformRepo
 
     public void CreatePlatform(Platform? platform)
     {
-        if (platform != null)
+        if (platform == null)
         {
             throw new ArgumentException(nameof(platform));
         }
